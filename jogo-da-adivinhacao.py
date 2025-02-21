@@ -3,13 +3,13 @@ print('Quero ver se consegue adivinhar qual foi...')
 print('='* 40)
 print('')
 from random import randint
-computador = randint(0,15)
+computador = randint(0,100)
 
 palpite = 0
 acertou = False
 
 while acertou == False:
-  jogador = int(input('Escolha um número entre 0 e 15: '))
+  jogador = int(input('Escolha um número entre 0 e 100: '))
   palpite += 1
   if jogador == computador:
     acertou = True
